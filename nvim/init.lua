@@ -21,10 +21,9 @@ vim.opt.rtp:prepend(lazypath)
 require("vim-options")
 -- Setup lazy.nvim
 require("lazy").setup("plugins",{
-    install = { colorscheme = { "habamax" } },
-  -- automatically check for plugin updates
   checker = { enabled = true },
 })
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.cmd("set number")
+vim.cmd("colorscheme everforest")
