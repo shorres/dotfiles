@@ -21,6 +21,7 @@ return {
       lspconfig.lua_ls.setup({})
       lspconfig.gopls.setup({})
       lspconfig.ts_ls.setup({})
+      lspconfig.pyright.setup({})
 
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
