@@ -1,5 +1,5 @@
 return {
-  dir = 'D:/Repos/calendar-heatmap',
+  dir = '~/Documents/Github/calendar-heatmap',
   name = 'heatmap',
   event = 'VimEnter',
   keys = {
