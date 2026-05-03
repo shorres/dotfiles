@@ -8,6 +8,6 @@ return {
       ensure_installed = {"lua", "go", "rust", "javascript", "typescript"},
       highlight = { enable = true },
       indent = { enable = true },
-    }) 
-  end 
+    })
+  end
 }
