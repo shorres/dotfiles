@@ -1,5 +1,4 @@
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+require("keybinds")
 
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -24,6 +23,5 @@ require("lazy").setup("plugins",{
   checker = { enabled = true },
 })
 
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.cmd("set number")
 vim.cmd("colorscheme everforest")
