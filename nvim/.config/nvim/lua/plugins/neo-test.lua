@@ -10,12 +10,6 @@ return {
   },
   config = function()
     require('neotest').setup({
-      dependencies = {
-        "nvim-neotest/nvim-nio",
-        "nvim-lua/plenary.nvim",
-        "antoinemadec/FixCursorHold.nvim",
-        "nvim-treesitter/nvim-treesitter"
-      },
       adapters = {
         require('neotest-playwright').adapter({
           options = {
@@ -44,6 +38,16 @@ return {
             },
           },
         }),
+      },
+      output = {
+        open_on_run = "short",
+      },
+      output_panel = {
+        enabled = true,
+        open = "botright split | resize 15",
+      },
+      diagnostic = {
+        enabled = true,
       },
     })
   end,
