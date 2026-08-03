@@ -13,7 +13,6 @@ vim.opt.shiftround = true
 vim.opt.expandtab = true
 
 vim.diagnostic.config({
-  -- This is the "inline" text you're looking for
   virtual_text = {
     spacing = 4,
     prefix = '●', -- or '■', '󰋔 ', etc.
