@@ -7,6 +7,14 @@ return {
     "nvim-tree/nvim-web-devicons", -- optional, but recommended
   },
   config = function()
-  vim.keymap.set('n', '<C-n>',':Neotree filesystem reveal left toggle<CR>', {})
-end
+    require('neo-tree').setup({
+      filesystem = {
+        filtered_items = {
+          visible = true,
+          hide_dotfiles = false
+        }
+      }
+    })
+    vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left toggle<CR>', {})
+  end
 }
